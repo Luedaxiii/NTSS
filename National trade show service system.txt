@@ -1,0 +1,115 @@
+National trade show service system
+The national trade shows parentheses NTSS parentheses is a service provider that helps business customers create, promote, organize, and run national and international trade shows. Business customers need NTFS s s for the service they need. Creating a trade show involves the design for the trade show, including professional services ranging from selecting a theme and a slogan to location and duration promoting a trade show includes advertisement activities. Organizing a trade show includes all activities before the trade show except creation and promotion. For example, inviting speakers, registering participants in the exhibitor. Running a trade show is an activity of onsite registration, setting up the booths, conference rooms for seminars, reception, and distributing trade show materials. The NTCS NTSS creates an account for each customer to record service charges, payments received and maintain the account balances.
+            	A trade show can be regarded as anything for example, the 2008 Consumer Electronics Show took place in Las Vegas Convention Center during January 7-10 dash, 2008 in the 2008 Macworld conference took place in at the Moscone center, 747 Howard St. San Francisco, California 94103 during January 14 dash 18, 2008. And eventually long to one or more predefined domains. For example, the CES and the Macworld belong to both technology and consumer electronics. The list of defined domains can change from time to time because new domains need be added and outdated domains need be removed.
+            	A trade show is attended by different types of participants including the event organization staff, the invited and/or selected speakers, exhibitors, and observers. Except the event organization staff and the event staff organizers, all participants must register to attend a trade show events. The registration charges a fee, which is different for different trade show events. The event organization staff creates, prepares, and runs the event. The invited speakers are famous figures in the domain who are invited to give a keynote address at the event. The selected speakers are invited to speak at the event based on the evaluation of their proposals. The proposals are usually reviewed by a committee of reviewers, who are experts in the domain and willing to help. The status of a proposal includes pending review, accepted, and rejected. The exhibitors come to the trade show to exhibit their products and or services. The exhibitors have to pay for their booth depending on the size of the booth (large, medium, or small). Boots are requested and rented for the whole duration of the event. Finally, the observers come to visit the trade show for various purposes.  
+
+i need some files created/edited to fit my scenario. i also need these deliverables made. here are the test cases i need
+here are the test cases i need.  do you understand? answer with yes or no
+
+create html/ auth.py, views.py, models.py, forms.py and __init__.py entry for: 
+
+1. Login/Logout as Event Organization Staff:
+Valid username accepted
+Valid username accepted
+Valid password accepted
+Invalid username warned
+Wrong password warned
+Forgot username/password
+Logout link as expected
+
+create html/ auth.py, views.py, models.py, forms.py and __init__.py entry for: 
+Staff creates an event (a trade show) (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+With all required fields	All required fields	Confirmation with the event#	Successful	
+Without all required fields	Not enough info	Error massages	Unsuccessful	
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for: 
+
+3.	Manage Event Account 
+
+Test Case	Value Entered	Result	Comments	Pass
+Add New with sufficient data		Confirmation	Call No.2 above	
+Add New with insufficient data		Error		
+Modify Existing	Event #	Successful		
+Modify Existing	Event #	Unsuccessful		
+Delete Existing	Event #	Confirmation		
+
+create html/ auth.py, views.py, models.py and __init__.py entry for eventorganization staff to : 
+
+4.	Manage Participant Account (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Add new participant		Generated Participant #
+with initial S	Participant is a
+speaker	
+Add new participant as
+exhibitor		Generated Participant #
+with initial E	Participant is
+an exhibitor	
+Add new participant as observer		Generated Participant # with initial O	Participant is an exhibitor	
+Modify info for existing	Participant #	Confirmation		
+Modify info for existing	Participant #	Error	The person is
+not found	
+Delete an account	Participant #	Confirmation		
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+5.	Staff registers a speaker for an event (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Sufficient data provided	All required fields	Confirmation with Registration #	Successful; may link to a proposal	
+Insufficient data
+provided (e.g. not paid)	Not enough info	Error messages	Unsuccessful	
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+6.	Staff registers an exhibitor for an event (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Sufficient data provided	All required fields	Confirmation with Registration #	Successful; may link to a booth	
+Insufficient data
+provided (e.g. not paid)	Not enough info	Error messages	Unsuccessful	
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+7.	Staff registers an observer for an event (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Sufficient data provided	All required fields	Confirmation with Registration #	Successful	
+Insufficient data
+provided (e.g. not paid)	Not enough info	Error messages	Unsuccessful	
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+8.	Staff rents a booth for an exhibitor (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Seach for available
+booths	Dates	List of booths, Sizes,
+Fees		
+Select a booth to rent	Booth #, Participant
+E#, Dates	Confirmation	Show the fee
+to pay	
+Modify a booth rent
+previously	Booth #, Participant
+E#, Dates	Confirmation	Show the fee
+to pay	
+Take the payment	Booth #, Participant E#, Dates	Confirmation/Receipt		
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+9.	Admin/Staff generates the revenue report for an event (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+Admin requested	Event #, Dates	Report		
+Revenue only from registrations	Event #, Dates	Report		
+
+
+create html/ auth.py, views.py, models.py and __init__.py entry for:
+10.	Admin/Staff generates a report for the number of participants in each category for an event (10%)
+
+Test Case	Value Entered	Result	Comments	Pass
+The number of exhibitors	Event #	Report		
+The number of observers	Event #	Report		
+The number of participants in each category	Event #	Report
